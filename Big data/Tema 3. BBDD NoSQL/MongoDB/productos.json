@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "MERMELADA DE ALBARICOQUE",
+        "precioCompra": 0.9,
+        "pvp": 2.3,
+        "stock": 40
+    },
+    {
+        "nombre": "TURRÓN BLANDO ALMENDRA",
+        "precioCompra": 1.75,
+        "pvp": 2.45,
+        "stock": 150
+    },
+    {
+        "nombre": "PAN DE MOLDE INTEGRAL",
+        "precioCompra": 0.95,
+        "pvp": 1.8,
+        "stock": 70
+    },
+    {
+        "nombre": "CHOCOLATE VALOR 150GR",
+        "precioCompra": 1.9,
+        "pvp": 2.6,
+        "stock": 20
+    },
+    {
+        "nombre": "TOFU CON SÉSAMO",
+        "precioCompra": 1.6,
+        "pvp": 2.85,
+        "stock": 40
+    },
+    {
+        "nombre": "CROQUETAS DE SETAS GOURMET",
+        "precioCompra": 0.95,
+        "pvp": 1.5,
+        "stock": 2
+    },
+    {
+        "nombre": "PATATAS FRITAS ONDULADAS",
+        "precioCompra": 0.37,
+        "pvp": 0.67,
+        "stock": 90
+    }
+]
