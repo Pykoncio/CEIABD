@@ -1,0 +1,1 @@
+./start_windows.bat --api --model Qwen_Qwen2.5-1.5B-Instruct --cpu --trust-remote-code 
