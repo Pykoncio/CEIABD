@@ -1,0 +1,8 @@
+Entorno virtual: (Crear dentro de una carpeta)
+
+python3 -m venv myVirtualEnvironment
+
+.\myVirtualEnvironment\Scripts\Activate
+
+echo chat.py
+
