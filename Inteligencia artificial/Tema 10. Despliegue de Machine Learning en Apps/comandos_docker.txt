@@ -1,0 +1,10 @@
+docker run hello-world -> Busca la imagen localmente, si no la encuentra la descarga y la ejecuta.
+docker pull ubuntu -> Descarga la imagen de Ubuntu pero no la ejecuta.
+docker start (contenedor) -> Inicia un contenedor docker.
+docker ps -> Ver los dockers que están en ejecución.
+docker ps -a -> Ver los contenedores ejecutados anteriormente.
+docker run -it alpine sh -> Crea un contenedor a partir de una imagen y ejecuta un comando dentro.
+docker image rm alpine -> Borrar imagen
+docker ps -aq -> Muestra los ids de los contenedores en ejecución
+docker kill $(docker ps -aq)
+docker images -> Muestra las imágenes docker.
