@@ -4,3 +4,6 @@ WORKDIR /home/notebooks
 EXPOSE 8888
 COPY . .
 ENTRYPOINT [ "jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--no-browser" ]
+
+# Si queremos que no tengamos que usar token podemos usar:
+# --NotebookApp.token='', --NotebookApp.password=''
