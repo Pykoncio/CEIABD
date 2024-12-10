@@ -1,0 +1,6 @@
+services:
+  app: 
+    build: .
+    command: python /app/script.py
+    volumes:
+      - .:/app
