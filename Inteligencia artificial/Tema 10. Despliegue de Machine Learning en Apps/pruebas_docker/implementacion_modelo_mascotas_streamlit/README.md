@@ -1,5 +1,8 @@
-# Clasificador de Mascotas
+# Pet classifier
 
-Aplicación hecha en _Streamlit_ que carga un modelo previamente entrenado para clasificar mascotas en función del peso, la altura, el color de ojos y el largo del pelo.
+Application made with _Streamlit_ which loads a previously trained model to classify pets based on weight, height, eye color and fur lenght.
 
-<img src="img/mascotas.jpg" width="400"/>
+![Pets image](img/mascotas.jpg)
+
+Web to try this app:
+<https://classifypets.streamlit.app/>
