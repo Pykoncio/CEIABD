@@ -12,14 +12,11 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
 sudo apt install -y git
 
-git clone https://github.com/Pykoncio/docker_jupyter_notebooks.git /home/ubuntu/docker_jupyter_notebooks
+git clone https://github.com/Pykoncio/docker_jupyter_notebooks.git
 
-cd /home/ubuntu/docker_jupyter_notebooks || exit 1
-sudo docker compose up -d
+cd /home/ubuntu/docker_jupyter_notebooks
 
-sudo systemctl enable docker
-
-(crontab -l 2>/dev/null; echo "@reboot cd /home/ubuntu/docker_jupyter_notebooks && /usr/bin/docker compose up -d") | crontab -
+sudo docker compose up
