@@ -1,7 +1,7 @@
 import numpy as np
 
 class Neuron: # Usamos todo el rato el self para referirnos a los atributos y metodos de la clase
-    def __init__(self, weights, bias, activation_function_name=None):
+    def __init__(self, weights, bias, activation_function_name="sigmoid"): # Sigmoid es por defecto
         self.__weights = weights
         self.__bias = bias
         self.__activation_function = self.__get_activation_function(activation_function_name)
@@ -31,7 +31,7 @@ class Neuron: # Usamos todo el rato el self para referirnos a los atributos y me
             "binary_step": self.__binary_step
         }
 
-        return functions.get(name) # Si no encuentra la función, devuelve la sigmoide
+        return functions.get(name, self.__sigmoid) # Si no encuentra la función, devuelve la sigmoide
     
     def __sigmoid(self, x):
         return 1 / (1 + np.exp(-x))
@@ -50,8 +50,4 @@ class Neuron: # Usamos todo el rato el self para referirnos a los atributos y me
             raise ValueError(f"El número de entradas y pesos no coincide... El vector de entrada debe de tener una longitud de {len(self.weights)} valores.")
         else:
             y = np.dot(input_data, self.__weights) + self.__bias
-
-            if self.__activation_function:
-                return self.__activation_function(y)
-            else:
-                return y
+            return self.__activation_function(y)
