@@ -16,6 +16,7 @@ acceptable_e = 0.01
 max_iterations = 10000
 
 for iteration in range(max_iterations):
+    
     total_e = 0
 
     for x, desired_y in zip(training_inputs, training_outputs):
