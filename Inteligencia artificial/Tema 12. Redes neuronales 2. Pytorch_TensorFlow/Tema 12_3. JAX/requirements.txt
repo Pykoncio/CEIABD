@@ -1,0 +1,8 @@
+numpy
+matplotlib
+scikit-learn
+tensorflow_datasets
+tensorflow
+torch
+jax
+flax
